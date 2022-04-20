@@ -6,7 +6,7 @@
       </v-toolbar-title>
       <v-spacer/>
       <v-toolbar-title class="headline">
-        <router-link to="/">Home</router-link> |
+        <router-link to="/login">ログイン</router-link> |
         <router-link to="/users">アカウントを作成</router-link>
       </v-toolbar-title>
       <v-spacer/>

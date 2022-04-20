@@ -11,11 +11,21 @@ export default new Router({
       name: 'Home',
       component: HomeView
     },
-  {
-    path: '/users',
-    name: 'Users',
-    component: () => import('../views/UsersView.vue')
-  }
+    {
+      path: '/users',
+      name: 'Users',
+      component: () => import('../views/UsersView.vue')
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: () => import('../views/LoginView.vue')
+    },
+    {
+      path: '/top',
+      name: 'Top',
+      component: () => import('../views/TopView.vue')
+    }
   ]
 })
 
