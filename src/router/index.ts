@@ -10,7 +10,12 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: HomeView
-    }
+    },
+  {
+    path: '/users',
+    name: 'Users',
+    component: () => import('../views/UsersView.vue')
+  }
   ]
 })
 

@@ -1,14 +1,13 @@
 <template>
   <v-app>
     <v-toolbar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
+      <v-toolbar-title>
+        <span>VueProject</span>
       </v-toolbar-title>
       <v-spacer/>
       <v-toolbar-title class="headline">
         <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>
+        <router-link to="/users">アカウントを作成</router-link>
       </v-toolbar-title>
       <v-spacer/>
       <v-btn
