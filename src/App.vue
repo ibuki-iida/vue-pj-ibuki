@@ -1,26 +1,21 @@
 <template>
   <v-app>
-    <v-toolbar app>
-      <v-toolbar-title>
-        <span>VueProject</span>
-      </v-toolbar-title>
+    <v-app-bar
+      app
+    >
+      <v-app-title>
+        <router-link to="/"><span>ibukiProject</span></router-link>
+      </v-app-title>
       <v-spacer/>
-      <v-toolbar-title class="headline">
+      <v-app-title class="headline">
         <router-link to="/login">ログイン</router-link> |
         <router-link to="/users">アカウントを作成</router-link>
-      </v-toolbar-title>
+      </v-app-title>
       <v-spacer/>
-      <v-btn
-        flat
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
-      </v-btn>
-    </v-toolbar>
+    </v-app-bar>
 
-    <v-content>
+    <v-main>
       <router-view/>
-    </v-content>
+    </v-main>
   </v-app>
 </template>

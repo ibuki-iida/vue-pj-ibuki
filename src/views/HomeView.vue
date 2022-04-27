@@ -1,17 +1,19 @@
 <template>
-  <div class="home">
-    <HelloWorld/>
-  </div>
+  <v-container>
+		<v-row>
+			<img :src="imgPath">
+    </v-row>
+  </v-container>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 
-@Component({
-  components: {
-    HelloWorld,
-  },
-})
-export default class Home extends Vue {}
+<script>
+export default {
+  name: 'HomeView',
+	data() {
+		return {
+			imgPath: require('@/assets/icon_raw_size.png')
+		}
+	}
+}
 </script>
